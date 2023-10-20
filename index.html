@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookies</title>
+    <meta name="Title" content="Bookies">
+    <meta name="description" content="A website where you can note favourite things about your favourite books">
+    <meta property="og:title" content="Bookies">
+    <meta property="og:description" content="A website where you can note favourite things about your favourite books">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="book.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="navContainer">
+            <h1 class="logo">Bookies</h1>
+        </div>
+    </header>
+    <main>
+        <div id="tileContainer">
+        </div>
+        <div id="overLay"></div>
+        <div id="popup">
+            <form>
+                <label for="bookName">Title</label>
+                <input type="text" id="bookName" required>
+                <label for="authorName">Author</label>
+                <input type="text" id="authorName" required>
+                <textarea id="bookDetails" placeholder="Description..." required></textarea>
+                <div id="buttonContainer">
+                    <button id="addDetails-btn">Add</button>
+                    <button id="cancelButton">Cancel</button>
+                </div>
+            </form>
+        </div>
+        <button id="addButton">+</button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

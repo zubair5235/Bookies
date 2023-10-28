@@ -162,6 +162,32 @@
     cursor: pointer;
 }
 
+#loadingPage{
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(167,0,255,1);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    visibility: visible;
+}
+
+#loadingCircle{
+    width: 50px;
+    height: 50px;
+    border: 5px dotted rgba(255,255,255,1);
+    border-radius: 50%;
+    animation-name: rotate;
+    animation-duration: 1s;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
 @media (max-width: 600px) {
     *{
         margin: 0px;
@@ -326,5 +352,16 @@
         color: white;
         font-family: 'Poppins', sans-serif;
         cursor: pointer;
+    }
+}
+
+@keyframes rotate {
+    from
+    {
+        transform: rotate(0deg);
+    }
+    to
+    {
+        transform: rotate(360deg);
     }
 }

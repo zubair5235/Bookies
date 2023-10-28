@@ -7,6 +7,7 @@ var Description = document.getElementById("bookDetails");
 var AddDetailsButton = document.getElementById("addDetails-btn");
 var CancelButton = document.getElementById("cancelButton");
 var AddButton = document.getElementById("addButton");
+var LoadingPage = document.getElementById("loadingPage");
 
 AddButton.addEventListener('click',function(event){
     event.preventDefault();
@@ -32,3 +33,7 @@ CancelButton.addEventListener('click',function(event){
 function DeleteDetails(event){
     event.target.parentElement.remove();
 }
+
+window.addEventListener('load',()=>{
+    LoadingPage.style.visibility = "hidden";
+});
